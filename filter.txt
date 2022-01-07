@@ -1,0 +1,14 @@
+! 2021-12-01 http://m.b520.net
+m.b520.net##.navigator-no
+m.b520.net##b:has-text(本站域名:)
+m.b520.net##p:nth-last-child(1)
+m.b520.net##ins div[id^="show-"]
+
+! 2021-12-01 https://www.bilibili.com
+www.bilibili.com##.bili-dialog-m
+
+! 2021-12-10 https://m.966mh.com
+||9du.kupjrokp.cn/run-*.html$domain=m.966mh.com
+
+! 2021-12-10 https://www.mhmh.me
+||www.mhmh.me/static/js/extpl.js$script,domain=www.mhmh.me
