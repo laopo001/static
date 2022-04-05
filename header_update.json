@@ -1,0 +1,21 @@
+{
+	"request": [],
+	"sendHeader": [],
+	"receiveHeader": [
+		{
+			"enable": true,
+			"name": "a",
+			"ruleType": "modifyReceiveHeader",
+			"matchType": "all",
+			"pattern": "",
+			"exclude": "",
+			"group": "test",
+			"isFunction": false,
+			"action": {
+				"name": "x-frame-options",
+				"value": "sameorigin"
+			}
+		}
+	],
+	"receiveBody": []
+}
