@@ -12,3 +12,6 @@ www.bilibili.com##.bili-dialog-m
 
 ! 2021-12-10 https://www.mhmh.me
 ||www.mhmh.me/static/js/extpl.js$script,domain=www.mhmh.me
+
+! 2022-04-05 https://www.yy8.me
+www.yy8.me##.tips
