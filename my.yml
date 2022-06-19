@@ -31,6 +31,7 @@ dns:
       - +.facebook.com
       - +.twitter.com
       - +.youtube.com
+      - +.586678.xyz
   # Lookup domains via specific nameservers
   # nameserver-policy:
   # 'www.baidu.com': '114.114.114.114'
