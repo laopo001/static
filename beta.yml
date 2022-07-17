@@ -1,0 +1,76 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 0.0.0.0:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 127.0.0.1:53
+  nameserver:
+    - 223.5.5.5 # 阿里DNS
+    - 119.29.29.29 # 腾讯DNS
+    - https://dns.alidns.com/dns-query
+    - https://doh.360.cn/dns-query
+  fallback:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+    - https://dns.rubyfish.cn/dns-query
+    - tls://dns.rubyfish.cn:853
+    - tls://8.8.8.8:853
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.586678.xyz
+  # Lookup domains via specific nameservers
+  # nameserver-policy:
+  # 'www.baidu.com': '114.114.114.114'
+
+
+proxy-providers:
+  yy.link:
+    type: http
+    url: https://一元机场.com/api/v1/client/subscribe?token=a63ede6d1d210bb888a02aa2e8fc1f52&flag=clash
+    interval: 3600
+    path: ./yy.link.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
+  bit.link:
+    type: http
+    url: https://s1.subbitznet.com/api/v1/client/subscribe?token=f50cc708d73da3afcf4c7db0009b2fbd
+    interval: 3600
+    path: ./bit.link.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
+  mj.link:
+    type: http
+    url: https://mojie.work/api/v1/client/subscribe?token=aec4c3abf3eb1e6461f5907a94dd3022
+    interval: 3600
+    path: ./mj.link.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
+  sw.link:
+    type: http
+    url: https://subr7ve.faster.icu/link/xfsp61NCTNwtJj7l?clash=2
+    interval: 3600
+    path: ./sw.link.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
