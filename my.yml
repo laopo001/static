@@ -37,13 +37,13 @@ dns:
   # 'www.baidu.com': '114.114.114.114'
 
 
-proxy-providers:
-  yiyuan.link:
-    type: http
-    url: https://一元机场.com/api/v1/client/subscribe?token=a63ede6d1d210bb888a02aa2e8fc1f52&flag=clash
-    interval: 3600
-    path: ./yiyuan.link.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.google.com/generate_204
+# proxy-providers:
+#   yiyuan.link:
+#     type: http
+#     url: https://一元机场.com/api/v1/client/subscribe?token=a63ede6d1d210bb888a02aa2e8fc1f52&flag=clash
+#     interval: 3600
+#     path: ./yiyuan.link.yaml
+#     health-check:
+#       enable: true
+#       interval: 600
+#       url: http://www.google.com/generate_204
